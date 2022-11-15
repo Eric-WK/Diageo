@@ -18,7 +18,9 @@ if "char_limit" not in st.session_state:
 if "remaining_characters" not in st.session_state:
     st.session_state.remaining_characters = 0
 
-AUTH_KEY = "60de2938-e48a-1fbc-b844-1ac2a5058006:fx"
+## access the secrets from streamlit 
+DEEPL_AUTH_KEY = st.secrets["DEEPL_AUTH_KEY"]
+HF_AUTH_KEY = st.secrets["HF_AUTH_KEY"]
 
 def get_character_usage(translator: deepl.Translator, limit_pcnt: float = 0.7) -> int:
     """"
@@ -42,7 +44,7 @@ def spanish_to_english(text: str, target: str = "EN-US"):
     """
     Translate the text from spanish to english 
     """
-    translator = deepl.Translator(AUTH_KEY) 
+    translator = deepl.Translator(DEEPL_AUTH_KEY) 
     ## get the character count 
     get_character_usage(translator)
     print(f"Character count: {st.session_state['char_usage']}", "Character Limit:", st.session_state['char_limit'], "Remaining Characters:", st.session_state['remaining_characters'])
@@ -54,7 +56,7 @@ def english_to_spanish(text: str, target: str = "ES"):
     """
     Translate the text from spanish to english 
     """
-    translator = deepl.Translator(AUTH_KEY)
+    translator = deepl.Translator(DEEPL_AUTH_KEY)
     get_character_usage(translator)
     print(f"Character count: {st.session_state['char_usage']}", "Character Limit:", st.session_state['char_limit'], "Remaining Characters:", st.session_state['remaining_characters'])
     result = translator.translate_text(text, target_lang=target) 
@@ -159,13 +161,8 @@ with st.expander("Show the audio files"):
 ## an audio file needs to be played, as well as showing the corresponding transcript 
 
 ## INFO
-KEY = "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"
 API_URL = CHATBOT_MODELS[model_size][model]
-headers = {"Authorization": f"Bearer {KEY}"}
-
-
-# if st.button("Get the model"):
-#     st.success("Model loaded")
+headers = {"Authorization": f"Bearer {HF_AUTH_KEY}"}
 
 ## keep session states
 if "generated" not in st.session_state:
