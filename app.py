@@ -195,6 +195,14 @@ def get_response():
 ## all of this assumes that the language is english
 ## consistency is key, so we need to keep the same languages! 
 ## the user input
+## add a separator 
+st.markdown("---")
+## add a header
+st.header("Chatbot")
+## add a description of the chatbot 
+
+st.markdown("This chatbot is able to reply in english and in spanish. For the demonstration purposes, a single language is used (if the language is changed, the entire chat history will be translated")
+
 user_input =  st.text_input("Type your message here", key="input_text")
 
 input_language = detect(user_input, low_memory=True)['lang']
