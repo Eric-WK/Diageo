@@ -201,7 +201,7 @@ st.markdown("---")
 st.header("Chatbot")
 ## add a description of the chatbot 
 
-st.markdown("This chatbot is able to reply in english and in spanish. For the demonstration purposes, a single language is used (if the language is changed, the entire chat history will be translated")
+st.markdown("This chatbot is able to reply in english and in spanish. For the demonstration purposes, a single language is used (if the language is changed, the entire chat history will be translated)")
 
 user_input =  st.text_input("Type your message here", key="input_text")
 
