@@ -1,7 +1,7 @@
 country,target,filename,gender,file_path,transcript
-Argentine,es_ar_male,arm_07508_00338543520.wav,male,/Users/eric/Documents/Locaria/Projects/Diageo/data/test/Argentine/arm_07508_00338543520.wav,"Che, ¿me ayudás a buscar una cartera para una amiga?"
-Argentine,es_ar_female,arf_04766_01059352712.wav,female,/Users/eric/Documents/Locaria/Projects/Diageo/data/test/Argentine/arf_04766_01059352712.wav,"Che, quiero invitar a unos profesores a cenar y los quiero impresionar."
-Colombian,es_co_male,com_03034_01485306939.wav,male,/Users/eric/Documents/Locaria/Projects/Diageo/data/test/Colombian/com_03034_01485306939.wav,No te entiendo nada
-Colombian,es_co_female,cof_09697_01334826590.wav,female,/Users/eric/Documents/Locaria/Projects/Diageo/data/test/Colombian/cof_09697_01334826590.wav,Para hacer esta receta necesitas fruta y alcohol
-Venezuelan,es_ve_male,vem_00610_01610376167.wav,male,/Users/eric/Documents/Locaria/Projects/Diageo/data/test/Venezuelan/vem_00610_01610376167.wav,Le voy a dar un curso de como hablar bien a su asistente
-Venezuelan,es_ve_female,vef_02484_00624991141.wav,female,/Users/eric/Documents/Locaria/Projects/Diageo/data/test/Venezuelan/vef_02484_00624991141.wav,"Hay tres tipos de café, americano descafeinado, americano concentrado y hasta capuchino"
+Argentine,es_ar_male,arm_07508_00338543520.wav,male,./test_data/Argentine/arm_07508_00338543520.wav,"Che, ¿me ayudás a buscar una cartera para una amiga?"
+Argentine,es_ar_female,arf_04766_01059352712.wav,female,./test_data/Argentine/arf_04766_01059352712.wav,"Che, quiero invitar a unos profesores a cenar y los quiero impresionar."
+Colombian,es_co_male,com_03034_01485306939.wav,male,./test_data/Colombian/com_03034_01485306939.wav,No te entiendo nada
+Colombian,es_co_female,cof_09697_01334826590.wav,female,./test_data/Colombian/cof_09697_01334826590.wav,Para hacer esta receta necesitas fruta y alcohol
+Venezuelan,es_ve_male,vem_00610_01610376167.wav,male,./test_data/Venezuelan/vem_00610_01610376167.wav,Le voy a dar un curso de como hablar bien a su asistente
+Venezuelan,es_ve_female,vef_02484_00624991141.wav,female,./test_data/Venezuelan/vef_02484_00624991141.wav,"Hay tres tipos de café, americano descafeinado, americano concentrado y hasta capuchino"
