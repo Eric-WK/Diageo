@@ -162,7 +162,7 @@ with st.expander("Show the audio files"):
     display_audio(ven_male, ven_male_tr, ven)
 
 ## an audio file needs to be played, as well as showing the corresponding transcript 
-st.markdown("The chatbot below is Locaria's custom chatbot, which is able to receive and respond to spanish and english. The current version will consider a single language. If the language is changed in the chat itself, the entire chat will be translated to the new language.")
+st.markdown("The chatbot below is Locaria's custom chatbot, which is able to receive and respond to spanish and english. The current version will consider a single language. If the language is changed in the chat itself, the entire chat will be translated to the new language.")s
 ## INFO
 API_URL = CHATBOT_MODELS[model_size][model]
 headers = {"Authorization": f"Bearer {HF_AUTH_KEY}"}
