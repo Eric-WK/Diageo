@@ -113,6 +113,9 @@ def display_audio(audio_file, transcript, col):
     col.write(transcript)
 
 ## header : Sample Dialects 
+st.markdown("This section shows the possible variations of the dialect that we'd be able to synthesize. There are 3 different dialects: Argentine, Colombian, Venezuelan")
+st.markdown("Our dialect-classification algorithm is also able to identify the different dialects with high-accuracy and precision.")
+st.markdown("Two genders are shown, to demonstrate the different dialects that can be generated. The audio is played and the transcript is shown below it.")
 
 st.header("Sample Dialects")
 with st.expander("Show the audio files"):
@@ -159,7 +162,7 @@ with st.expander("Show the audio files"):
     display_audio(ven_male, ven_male_tr, ven)
 
 ## an audio file needs to be played, as well as showing the corresponding transcript 
-
+st.markdown("The chatbot below is Locaria's custom chatbot, which is able to receive and respond to spanish and english. The current version will consider a single language. If the language is changed in the chat itself, the entire chat will be translated to the new language.")
 ## INFO
 API_URL = CHATBOT_MODELS[model_size][model]
 headers = {"Authorization": f"Bearer {HF_AUTH_KEY}"}

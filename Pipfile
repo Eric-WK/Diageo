@@ -10,8 +10,10 @@ deepl = "*"
 fasttext-langdetect = "*"
 streamlit-chat = "*"
 wget = "*"
+requests = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.8"
